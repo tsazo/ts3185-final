@@ -12,7 +12,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #static route
-@app.route("/")
+@app.route('/')
 def style():
     style = """"""
 
@@ -22,12 +22,16 @@ def name():
 def picture():
     return ""
 
-def hello():
-    return render_template("index.html")
+def index():
+    return render_template('index.html')
 
-@app.route("/1006")
-def test123():
-    return "<h1>This is my 1006 website</h1>"
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/columbia')
+def about():
+    return render_template('columbia.html')
 
 #start the server
 if __name__ == "__main__":
