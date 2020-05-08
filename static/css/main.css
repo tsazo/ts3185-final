@@ -32,7 +32,7 @@ a:hover, .index div a:hover{
   transition: 0.3s;
 }
 
-.index {
+.index, .columbia {
   padding: 10px 0px 50px 00px;
   width: 90vw;
   margin: auto;
@@ -97,3 +97,6 @@ footer{
   color: white;
 }
 
+table, th, tr, td {
+  border: 1px solid black;
+}
