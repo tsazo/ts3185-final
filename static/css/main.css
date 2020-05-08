@@ -26,16 +26,16 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
+a:hover, .index div a:hover{
+  cursor: pointer;
   color: lightblue;
   transition: 0.3s;
 }
 
-.body {
+.index {
   padding: 10px 0px 50px 00px;
   width: 90vw;
   margin: auto;
-  min-height: 90vh;
 }
 
 figure {
@@ -78,3 +78,22 @@ footer{
 .sides:last-child{
   text-align: right;
 }
+
+.index div {
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.index div:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+
+
+.index div a{
+  color: white;
+}
+
